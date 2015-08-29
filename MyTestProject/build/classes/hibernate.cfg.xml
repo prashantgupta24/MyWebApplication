@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+              "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+              "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+              <hibernate-configuration>
+
+              <session-factory>
+              
+                  <property name="connection.url">jdbc:mysql://localhost/prashantdb</property>
+                  <property name="connection.username">root</property>
+                  <property name="connection.password">prashant</property>
+                  <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+                  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+                  <property name="current_session_context_class">thread</property>
+                  <mapping resource="com/example/servlet/Helper.hbm.xml" />
+                  <mapping resource="com/example/servlet/LoginTimes.hbm.xml" />
+                  
+                    
+
+                  <!-- ________________ To be Edited _________________ -->
+
+
+                  <!-- _____________ End of To be Edited ______________ -->
+                    <!--org.hibernate.dialect.SQLServerDialect  -->
+              
+                  <!-- _________ Defining the Mapping Files ___________ -->
+
+
+              </session-factory>
+              </hibernate-configuration>
